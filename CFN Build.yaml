@@ -349,7 +349,7 @@ Resources:
     Properties:
       Handler: "index.lambda_handler"
       Role: !GetAtt LambdaRole.Arn
-      Runtime: "python3.9"
+      Runtime: "python3.12"
       Timeout: 10
       FunctionName: !Sub "NYCTaxiTrips-DataTransformation-${AWS::StackName}"
       Code:
@@ -382,7 +382,7 @@ Resources:
     Properties:
       Handler: "index.lambda_handler"
       Role: !GetAtt StartKDALambdaRole.Arn
-      Runtime: "python3.9"
+      Runtime: "python3.12"
       Timeout: 10
       FunctionName: !Sub "StartKDA-${AWS::StackName}"
       Code:
